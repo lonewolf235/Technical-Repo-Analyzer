@@ -2,5 +2,5 @@ openai
 streamlit
 langchain
 requests
-jupyter
 nbformat
+python-dotenv

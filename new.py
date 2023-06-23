@@ -4,17 +4,16 @@ import requests
 import subprocess
 import nbformat
 import tempfile
-from constants import openai_key
 from langchain.llms import OpenAI
 from langchain import PromptTemplate
 from langchain.document_loaders import TextLoader
 import streamlit as st
 from fileprocessing import repoaccess, extract_code_cells, format_code_cells, is_float, delete_files_except_extensions
+import dotenv
 
-# os.makedirs("temp_clone")
+
+dotenv.load_dotenv(dotenv_path="key.env")
 #Api key
-os.environ["OPENAI_API_KEY"]=openai_key
-
 #streamlit framework for frontend
 st.title("Github Analysis Project")
 profile=st.text_input("Enter the Github Profile link")
