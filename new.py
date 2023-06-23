@@ -74,9 +74,8 @@ if profile:
                 complexity+=val
         print(repo,complexity)
         complex[repo]=complexity
-    sortedDict = sorted(complex)
+    sortedDict = dict(sorted(complex.items(), key=lambda x:x[1]))
     subprocess.check_output(['rm', '-rf', local_path])
-    st.write(complex)
-    st.write(sortedDict)
+    st.write(list(sortedDict)[-1])
 
 

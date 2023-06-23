@@ -2,3 +2,5 @@ openai
 streamlit
 langchain
 requests
+jupyter
+nbformat
