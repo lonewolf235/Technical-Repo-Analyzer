@@ -31,6 +31,7 @@ if profile:
     """
     prompt = PromptTemplate.from_template(template)
     complex={}
+    print(repos)
     for repo in repos:
         subprocess.check_output(['rm', '-rf', local_path])
         try:
