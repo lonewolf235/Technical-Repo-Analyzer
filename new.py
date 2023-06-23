@@ -41,10 +41,10 @@ if profile:
         except subprocess.CalledProcessError as e:
             print(f"Failed to clone repository: {e}")
             print("false")
-        extensions = ['.py', '.js', '.java', '.c', '.cpp', '.cs', '.go', '.rb', '.php', '.scala','.sh', '.bash', '.sql', '.ipynb'] #1st
+        extensions = ['.py', '.js', '.java', '.c', '.cpp', '.cs', '.go', '.rb', '.php', '.scala','.sh', '.bash', '.sql', '.ipynb']
         delete_files_except_extensions(local_path,extensions)
         docs=[]
-        for filename in os.scandir(local_path):  ## this point is remaining
+        for filename in os.scandir(local_path): 
             if filename.is_file():
                 print((filename.name))
                 try:
@@ -59,10 +59,9 @@ if profile:
                         docs.append(x[0].page_content)
                 except Exception as e:
                     print("Error loading files with pattern")
-                    continue ## till here and then in loop
+                    continue 
         print(len(docs))
 
-        ## if ipynb toh str return hogi uske liye format alag tarah se banega
         complexity=0.0
         for f in docs:
             print(len(f),f)
