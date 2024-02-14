@@ -7,28 +7,31 @@ Additionally, we have a Streamlit-hosted web interface for this tool, making it 
 
 ## Features
 
-- Analyze GitHub repositories to determine technical complexity.
-- Prioritize repositories based on nesting, lines of code, and branching complexity.
-- Retrieve GitHub repository data using the GitHub API.
-- Easy-to-use command-line interface.
-- Streamlit-hosted web interface for user-friendly interaction.
+- Full-stack application with code complexity analysis.
+- Integration with OpenAI API, Github API, and Langchain.
+- User-friendly Streamlit-hosted web interface.
+- Automated error detection for efficient code review cycles.
+- Prototype tool designed for developers, customizable for specific folders within a repository.
+- Significantly reduces manual effort, saving over 20 hours per code review cycle.
 
 ## Installation
 
 1. Clone this repository:
 
-   ```bash
+```bash
    git clone https://github.com/lonewolf235/Technical-Repo-Analyzer.git
-Navigate to the project directory:
-
-  ```bash
-   cd technical-repo analyzer
-```
-Install the required Python packages using pip:
+   ```
+2. Navigate to the project directory:
 
 ```bash
-pip install -r requirements.txt
-```
+   cd technical-repo analyzer
+  ```
+3. Install the required Python packages using pip:
+
+```bash
+   pip install -r requirements.txt
+  ```
+
 # Streamlit Web Interface Usage
 Access the Streamlit-hosted web interface by following this link: [Technical-Repo Analyzer on Streamlit](https://technicalcoder.streamlit.app/) (currently api key is removed).
 
@@ -47,6 +50,13 @@ Please make sure to follow the Contributor Covenant Code of Conduct in all your 
 
 # Contact
 If you have any questions or suggestions regarding this project, please feel free to contact us at prakashvstomar@gmail.com
+
+## Note : 1
+The tool uses the OpenAI API key. If needed, it can be replaced by any open-source LLM model, provided maintenance of servers is available on a broader level.
+
+## Note : 2
+The output may seem less detailed, as this tool is intended as a prototype for developers. It facilitates error detection and can be customized to target specific folders in a repository.
+
 
 Happy coding!
 
