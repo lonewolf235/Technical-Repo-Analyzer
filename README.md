@@ -18,18 +18,20 @@ Additionally, we have a Streamlit-hosted web interface for this tool, making it 
 
 1. Clone this repository:
 
-   ```bash
+```bash
    git clone https://github.com/lonewolf235/Technical-Repo-Analyzer.git
-Navigate to the project directory:
-
-  ```bash
-   cd technical-repo analyzer
-```
-Install the required Python packages using pip:
+   ```
+2. Navigate to the project directory:
 
 ```bash
-pip install -r requirements.txt
-```
+   cd technical-repo analyzer
+  ```
+3. Install the required Python packages using pip:
+
+```bash
+   pip install -r requirements.txt
+  ```
+
 # Streamlit Web Interface Usage
 Access the Streamlit-hosted web interface by following this link: [Technical-Repo Analyzer on Streamlit](https://technicalcoder.streamlit.app/) (currently api key is removed).
 
